@@ -1,3 +1,4 @@
+import { isDisabled } from "@testing-library/user-event/dist/utils";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -14,8 +15,10 @@ export const DescriptionLeftSide = ({
     AOS.init({ duration: 3000 });
   }, []);
 
+  // data-aos="fade-in" disabled, as it was causing problems with visibility
+
   return (
-    <div className="description-section-one-section" data-aos="fade-in">
+    <div className="description-section-one-section">
       <div className="description-section-one-head">
         <h3>
           <b>{head}</b>

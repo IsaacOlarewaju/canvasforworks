@@ -1,12 +1,12 @@
 import { React } from "react";
 import { FirstTitle } from "./FirstTitle";
-import { TempHomeBackground } from "./TempHomeBackground";
+import { HomepageBackground } from "./HomepageBackground";
 
 export const HomeIndex = () => {
   return (
     <div>
-      <FirstTitle />
-      <TempHomeBackground />
+      {/* <FirstTitle /> */}
+      <HomepageBackground />
     </div>
   );
 };

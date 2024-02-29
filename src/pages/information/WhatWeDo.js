@@ -1,8 +1,16 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 export const WhatWeDo = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
+
   return (
     <div className="info-container">
       <div className="who-we-are-container">
-        <div className="information-first-container">
+        <div className="information-first-container" data-aos="fade-zoom-in">
           <p className="information-opening">
             “If you can't find the right media, <i>create your own.”</i>
             <br />

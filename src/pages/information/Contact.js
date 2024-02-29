@@ -1,10 +1,17 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export const Contact = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
+
   return (
     <div className="info-container">
       <div className="who-we-are-container">
-        <div className="information-first-container">
+        <div className="information-first-container" data-aos="fade-zoom-in">
           <p className="information-opening"></p>
           <div className="information-second-container">
             <div className="information-content">
@@ -15,7 +22,7 @@ export const Contact = () => {
                 <br />
                 <br />
                 To partner with us on a project, please contact
-                projects@canvasforworks.com
+                projects@canvas-fw.com
                 <br />
                 <br />
                 <br />
