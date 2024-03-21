@@ -189,10 +189,6 @@ li {
 
 
 
-
-
-
-
 /* TYPEFACE */
 .buyan {
   list-style-type: none;
@@ -441,15 +437,6 @@ li {
   height: 100%;
 }
 
-/* COMNTAINER HAS BEEN DEPRICATED - NO LONGER OF ANY USE */
-/* .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color: white;
-} */
 
 .buttons-container {
   width: 100%;
@@ -505,7 +492,7 @@ color: black;
 
 
 
-/* PROJECT PAGE PICTURE LINKS */
+/* ONE PROJECT PAGE - PICTURE LINKS */
 .items-container {
   padding-top: 83px;
   display: grid;
@@ -528,18 +515,19 @@ color: black;
   .items-container {
     display: grid;
     width: 100%;
-    /* ADD HERE FOR OMRE PROJECTS */
+    /* ADD HERE FOR MORE PROJECTS */
     grid-template-rows: minmax(20vw, 37.5vw) minmax(20vw, 37.5vw);
     grid-template-columns: repeat(2, 50%);
   }
 }
 
 
+/* ONE PROJECT PAGE - NAV BAR */
 .active {
   color: black;
 }
 
-.trynow {
+.item-img {
   object-fit: cover;
   position: absolute;
   width: 100%;
@@ -547,7 +535,7 @@ color: black;
 }
 
 @media screen and (min-width: 980px) {
-  .trynow {
+  .item-img {
     object-fit: cover;
     position: absolute;
     width: 50vw;
@@ -555,14 +543,14 @@ color: black;
   }
 }
 
-.trythis {
+.item-img-link {
   height: 100%;
   cursor: pointer;
   transition: 0.5s;
 }
 
 @media screen and (min-width: 980px) {
-  .trythis {
+  .item-img-link {
     height: 100%;
     cursor: pointer;
     background-color: rgb(244, 244, 238);
@@ -571,7 +559,7 @@ color: black;
   }
 }
 
-.trythis:hover {
+.item-img-link:hover {
   opacity: 0;
 }
 
@@ -646,7 +634,7 @@ color: black;
   justify-content: flex-end;
 }
 
-  .information-content {
+.information-content {
     color: white;
     width: 100%;
     font-family: t-star-pro;
@@ -1114,6 +1102,38 @@ h3::selection {
 
 
 /* PROJECTS PAGE CONTENT */
+
+/* LANDING-PAGE-FIXED-LOGO */
+.landing-page-logo-container {
+  height: 93vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+}
+
+
+.landing-page-logo img {
+  width: 180px;
+}
+
+@media screen and (min-width: 480px) {
+  .landing-page-logo img {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .landing-page-logo img {
+    width: 350px;
+  }
+}
+
+
+
 .projects-body-content {
   align-self: center;
   width: 100%;
@@ -1268,6 +1288,10 @@ h3::selection {
   }
 }
 
+
+
+
+/* PROJECTS PAGE CONTENT - BOTTOM PROJECTS LINKS */
 .bottom-navbar-section {
   position: relative;
   display: none;
@@ -1360,37 +1384,7 @@ align-items: flex-end;
 }
 
 
-
-
-.closure-links-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-top: 100px;
-  margin-bottom: -100px;
-}
-
-.closure-links-list {
-  width: 100%;
-  font-weight: bold;
-  font-size: 1.2rem;
-  line-height: 45px;
-}
-
-@media screen and (min-width: 980px) {
-  .closure-links-list {
-    width: 86%;
-    font-size: 1.2rem;
-  }
-}
-
-
-.closure-links {
-  color: #dac6a9;
-}
-
-
+/* SOAR RISING BACKGROUND VIDEO */
 .soar-rising-background-video {
   position: fixed;
   z-index: -1;
@@ -1420,33 +1414,39 @@ align-items: flex-end;
 
 
 
-.landing-page-logo-container {
-  height: 93vh;
+/* PROJECTS PAGE CONTENT - CLOSURE LINKS */
+.closure-links-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  padding-top: 100px;
+  margin-bottom: -100px;
+}
+
+.closure-links-list {
   width: 100%;
-  z-index: -1;
-}
-
-
-.landing-page-logo img {
-  width: 180px;
-}
-
-@media screen and (min-width: 480px) {
-  .landing-page-logo img {
-    width: 280px;
-  }
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 45px;
 }
 
 @media screen and (min-width: 980px) {
-  .landing-page-logo img {
-    width: 350px;
+  .closure-links-list {
+    width: 86%;
+    font-size: 1.2rem;
   }
 }
+
+
+.closure-links {
+  color: #dac6a9;
+}
+
+
+
+
+
 
 .testthis {
   width: 100%;

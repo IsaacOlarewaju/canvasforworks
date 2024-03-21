@@ -61,9 +61,9 @@ export const MultiFilters = () => {
       <div className="items-container">
         {filteredItems.map((item, idx) => (
           <div key={`items-${idx}`} className="item">
-            <img className="trynow" src={item.img} />
+            <img className="item-img" src={item.img} />
             <Link to={item.href}>
-              <div className="trythis"></div>
+              <div className="item-img-link"></div>
             </Link>
           </div>
         ))}
