@@ -37,7 +37,7 @@ export const Contact = () => {
                 <br />
                 <br />
                 <br />
-                2024 CANVAS for Works©. All Rights Reserved.
+                2025 CANVAS for Works©. All Rights Reserved.
               </p>
             </div>
             <div className="information-footer">

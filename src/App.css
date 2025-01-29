@@ -497,7 +497,7 @@ color: black;
   padding-top: 83px;
   display: grid;
   width: 100%;
-  grid-template-rows: minmax(20vw, 76vw) minmax(20vw, 76vw) minmax(20vw, 76vw) minmax(20vw, 76vw);
+  grid-template-rows: minmax(20vw, 76vw) minmax(20vw, 76vw) minmax(20vw, 76vw) minmax(20vw, 76vw) minmax(20vw, 76vw) minmax(20vw, 76vw);
   grid-template-columns: 100%;
   }
 
@@ -516,7 +516,7 @@ color: black;
     display: grid;
     width: 100%;
     /* ADD HERE FOR MORE PROJECTS */
-    grid-template-rows: minmax(20vw, 37.5vw) minmax(20vw, 37.5vw);
+    grid-template-rows: minmax(20vw, 37.5vw) minmax(20vw, 37.5vw) minmax(20vw, 37.5vw);
     grid-template-columns: repeat(2, 50%);
   }
 }
@@ -640,6 +640,7 @@ color: black;
     font-family: t-star-pro;
     font-size: 0.88rem;
     line-height: 1.1rem;
+    height: 60vh;
   }
 
 @media screen and (min-width: 980px) {
@@ -842,6 +843,84 @@ h3::selection {
 
 
 /* PROJECTS PAGE BACKGROUND */
+
+/* GSPL */
+.gspl-projects-background {
+  position: fixed;
+  height: 84vh;
+  width: 100%;
+  background: url(/public/images/gspl-landing-mobile.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+  z-index: -1;
+}
+@media screen and (min-width: 980px) {
+.gspl-projects-background {
+  position: fixed;
+  height: 93vh;
+  width: 100%;
+  background: url(/public/images/gspl-landing.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+  z-index: -1;
+}
+}
+
+/* LIFE CREATIONS */
+.life-creations-projects-background {
+  position: fixed;
+  height: 84vh;
+  width: 100%;
+  background: url(/public/images/life-creations-landing-mobile.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+  z-index: -1;
+}
+@media screen and (min-width: 980px) {
+.life-creations-projects-background {
+  position: fixed;
+  height: 93vh;
+  width: 100%;
+  background: url(/public/images/life-creations-landing.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+  z-index: -1;
+}
+}
+
+/* FLAVOUR FLAMES */
+.flavour-flames-projects-background {
+  position: fixed;
+  height: 84vh;
+  width: 100%;
+  background: url(/public/images/flavour-flames-landing-mobile.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+  z-index: -1;
+}
+@media screen and (min-width: 980px) {
+.flavour-flames-projects-background {
+  position: fixed;
+  height: 93vh;
+  width: 100%;
+  background: url(/public/images/flavour-flames-landing.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+  z-index: -1;
+}
+}
 
 /* COTTA */
 .cotta-projects-background {
@@ -1189,6 +1268,33 @@ h3::selection {
   width: 100%;
 }
 
+/* NEEDS REWORK FOR MOBILE DEVICES */
+.projects-artwork-4 {
+  height: auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 980px) {
+  .projects-artwork-4 {
+    height: auto;
+    width: 60.5%;
+    transform: translateX(32.65%);
+}
+}
+
+.projects-artwork-5 {
+  height: auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 980px) {
+  .projects-artwork-5 {
+    height: auto;
+    width: 60.5%;
+    transform: translateX(-32.5%);
+}
+}
+
 .description-section-one {
   top: 120px;
   width: 70%;
@@ -1450,4 +1556,14 @@ align-items: flex-end;
 
 .testthis {
   width: 100%;
+}
+
+
+.projects-body-descriptive-text {
+  padding-top: 0px;
+}
+
+.projects-body-descriptive-text-container {
+  width: 100%;
+  padding-top: 30px;
 }

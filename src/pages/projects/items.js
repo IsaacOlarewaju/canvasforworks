@@ -3,10 +3,10 @@
 
 export const items = [
   {
-    name: "cotta",
-    category: "Digital",
-    href: "/CottaIndex",
-    img: "/images/cotta.jpeg",
+    name: "gspl",
+    category: "Product",
+    href: "/GsplIndex",
+    img: "/images/gspl-homepage-thumbnail.png",
   },
   {
     name: "gosse",
@@ -15,15 +15,33 @@ export const items = [
     img: "/images/gosse.jpeg",
   },
   {
+    name: "life-creations",
+    category: "Digital",
+    href: "/LifeCreationsIndex",
+    img: "/images/life-creations-homepage-thumbnail.png",
+  },
+  {
+    name: "cotta",
+    category: "Digital",
+    href: "/CottaIndex",
+    img: "/images/cotta.jpeg",
+  },
+  {
+    name: "flavour-flames",
+    category: "Digital",
+    href: "/FlavourFlamesIndex",
+    img: "/images/flavour-flames-homepage-thumbnail.png",
+  },
+  {
     name: "soar",
     category: "Digital",
     href: "/SoarRisingIndex",
     img: "/images/soar.jpeg",
   },
-  {
-    name: "cornerstone",
-    category: "Digital",
-    href: "/CornerstoneIndex",
-    img: "/images/cornerstone.jpeg",
-  },
+  // {
+  //   name: "cornerstone",
+  //   category: "Digital",
+  //   href: "/CornerstoneIndex",
+  //   img: "/images/cornerstone.jpeg",
+  // },
 ];
