@@ -120,27 +120,7 @@ export const GsplProjectsBody = () => {
         </div>
         <ProjectsImageOne pic="/images/gspl-imagery-fifteen.webp" />
         <ProjectsImageOne pic="/images/gspl-imagery-six-and-seven.webp" />
-        <div className="closure-links-container">
-          <div className="closure-links-list">
-            Press
-            <br />
-            <Link
-              className="closure-links"
-              to="https://pausemag.co.uk/2020/11/gosse-au-coeur-releases-a-lookbook-for-its-third-collection/"
-              target="_blank"
-            >
-              PAUSE magazine
-            </Link>
-            <br />
-            <Link
-              className="closure-links"
-              to="https://guap.co.uk/gosse-au-coeur-forever-daydreaming-collection/"
-              target="_blank"
-            >
-              GUAP
-            </Link>
-          </div>
-        </div>
+        <div className="closure-links-container"></div>
       </div>
     </div>
   );
