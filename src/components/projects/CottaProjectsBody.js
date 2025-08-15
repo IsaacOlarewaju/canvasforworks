@@ -20,6 +20,7 @@ export const CottaProjectsBody = () => {
       </div>
       <CottaDescriptionBody />
       <div className="projects-body-content">
+        <ProjectVideoOne vid="/images/Header-video-2.mp4" />
         <ProjectVideoOne vid="/images/Header-video.mp4" />
         <ProjectsImageOne pic="/images/cotta-imagery-one.jpeg" />
         <ProjectsImageOne pic="/images/cotta-imagery-two.jpeg" />
